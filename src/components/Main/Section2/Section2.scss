@@ -1,0 +1,37 @@
+@import '../../../styles/abstracts/variables';
+
+.Section2{
+	padding:60px 0 0 0;
+	position: relative;
+	max-width: 1440px;
+	margin: 0 auto;
+	@media screen and (min-width:1000px){
+		display: flex;
+		flex-wrap: wrap;
+		padding-bottom: 150px;
+	}
+	.greenTrace{
+		width:9px;
+		height:900px;
+		top:50%;
+		left:50%;
+		transform: translate(-50%,-40%);
+		background-color: $Cyan;
+		position: absolute;
+		@media screen and (min-width:1000px){
+			width:900px;
+			height: 9px;
+			transform: translate(-50%,80px);
+		}
+	}
+	.advancedStatistics{
+		width:100%;
+		p{
+			@media screen and (min-width:1000px){
+			max-width:500px;
+			display: block;
+			margin:0 auto;
+			}
+		}
+	}
+}

@@ -1,0 +1,41 @@
+@import '../../../styles/abstracts/variables';
+.IconComponents{
+	text-align: center;
+	background-color: white;
+	border-radius: 10px;
+	padding:88px 35px 50px 35px;
+	position: relative;
+	margin:90px auto 0 auto;
+	width:300px;
+	max-width: 70%;
+	@media screen and (min-width:1000px){
+		width:23%;
+		max-width: 330px;
+		text-align: left;
+		align-self: center;
+	}
+	.Icon{
+		width:88px;
+		height: 88px;
+		border-radius: 50%;
+		background-color: $DarkViolet;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: absolute;
+		top:50%;
+		left:50%;
+		transform: translate(-50%,-200%);
+		@media screen and (min-width:1000px){
+			left:23%;
+		}
+	}
+}
+@media screen and (min-width:1000px){
+	div:nth-of-type(4){
+		margin-bottom: -100px;
+}
+	div:nth-of-type(5){
+		margin-bottom: -200px;
+}
+}

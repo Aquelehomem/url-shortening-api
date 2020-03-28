@@ -1,0 +1,57 @@
+@import '../../../styles/abstracts/variables';
+div.shortLink{
+	background-color: white;
+	border-radius: 10px;
+	margin:0 auto 20px auto;
+	max-width: 500px;
+	@media screen and (min-width:1000px){
+		max-width:851px;
+		padding:0px 21px;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+	.url{
+		border-bottom: 1px solid hsl(0, 0%, 90%);
+		padding:17px;
+		@media screen and (min-width:1000px){
+			border:none;
+			padding:0;
+			align-self: center;
+		}
+	}
+	.shortenUrl{
+		display: flex;
+		flex-direction: column;
+		padding:17px;
+		@media screen and (min-width:1000px){
+			flex-direction: row;
+			justify-content: space-between;
+			width:35%;
+			align-items: center;
+		}
+		span{
+			margin:0 0 15px 0;
+			@media screen and (min-width: 1000px){
+				width:20%;
+				margin:0;
+			}
+		}
+		button{
+			background-color: $Cyan;
+			border:none;
+			padding:15px 10px;
+			border-radius: 10px;
+			&:hover{
+						background-color: hsl(180, 66%, 80%)
+					}
+			@media screen and (min-width: 1000px){
+				width:35%;
+				padding:10px;
+			}	
+		}
+		button.Copied{
+			background-color: $VeryDarkBlue;
+		}
+	}
+}

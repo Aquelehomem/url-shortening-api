@@ -1,0 +1,28 @@
+@import '/../../styles/abstracts/variables';
+
+footer{
+	.Section1{
+	padding:110px 38px;
+	background-image: url('/images/bg-boost-mobile.svg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: $DarkViolet;
+	@media screen and (min-width: 1000px){
+		background-image: url('/images/bg-boost-desktop.svg');
+		padding:73px 38px;
+	}
+	div{
+		text-align: center;
+		button{
+			width:60%;
+ 			height:50px;
+ 			border-radius: 50px;
+ 			border:none;
+ 			max-width: 198px;
+ 			&:hover{
+						background-color: hsl(180, 66%, 80%)
+					}
+		}
+	}
+}
+}
