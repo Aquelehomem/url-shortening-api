@@ -13,7 +13,7 @@ form{
 	min-width: 50%;
 	width:328px;
 	border-radius: 10px;
-	background-image: url('/images/bg-shorten-mobile.svg');
+	background-image: url('./images/bg-shorten-mobile.svg');
 	background-position: 100% 0%;
 	background-repeat: no-repeat;
 	transform: translate(-50%,-20%);
@@ -23,7 +23,7 @@ form{
 		padding:51px 51px;
 		min-width: unset;
 		width:800px;
-		background-image: url('/images/bg-shorten-desktop.svg');
+		background-image: url('./images/bg-shorten-desktop.svg');
 	}
 	input,button{
 		width:100%;
